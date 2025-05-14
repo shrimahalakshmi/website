@@ -119,6 +119,47 @@
   <button onclick="showCategory('about')">Contact</button>
    </nav>
 
+<!-- Add this div just below the <nav> section -->
+<div id="home" class="products">
+  <div class="info-section" style="grid-column: 1 / -1;">
+    <h2>Welcome to City Pet Care & Clinic</h2>
+    <p>We offer a wide range of pet services for dogs and cats:</p>
+    <ul>
+      <li>Professional Pet Grooming</li>
+      <li>Bathing & Hair Trimming</li>
+      <li>Routine Health Checkups</li>
+      <li>Deworming & Vaccination</li>
+      <li>Pregnancy Diagnosis & Breeding Advice</li>
+      <li>Blood Transfusion</li>
+      <li>Pet Boarding</li>
+    </ul>
+  </div>
+
+  <!-- Images -->
+  <div class="product-card">
+    <img src="https://cdn.pixabay.com/photo/2017/11/05/17/36/dog-2923314_1280.jpg" alt="Pet Grooming">
+    <h3>Grooming Services</h3>
+    <p>Bathing, trimming, ear and nail care.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/dog-1293074_1280.jpg" alt="Vet Checkup">
+    <h3>Clinic Checkup</h3>
+    <p>Routine checkups and treatments by professionals.</p>
+  </div>
+  <div class="product-card">
+    <img src="https://cdn.pixabay.com/photo/2017/03/31/15/56/dog-2190856_1280.jpg" alt="Bathing">
+    <h3>Bathing Care</h3>
+    <p>We provide warm water bathing for all pet sizes.</p>
+  </div>
+
+  <!-- Final note -->
+  <div class="info-section" style="grid-column: 1 / -1;">
+    <h3>Veterinary Medicines Available</h3>
+    <p>We stock a variety of trusted veterinary medicines for all Animals & pets.</p>
+  </div>
+</div>
+  
+
   <div class="search-box">
     <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search for products...">
   </div>
@@ -427,11 +468,13 @@
     </div>
   </div>
 
-  <footer style="background-color: #007b5e; color: white; text-align: center; padding: 20px;">
-  <p>&copy; 2025 Shri Mahalakshmi Medicals and Pet Shop | City Pet Care & Clinic</p>
-  <p>Opposite Canara Bank K.R.S Complex Ground Floor, TM Road, Honnali - 577217</p>
-  <p>Contact: <a href="tel:+917483467378" style="color: white;">+91 74834 67378</a></p>
-  </footer>
+  <!-- Add this at the end before </body> -->
+<footer style="background-color:#007b5e; color:white; padding:20px; text-align:center;">
+  <p><strong>Shri Mahalakshmi Medicals and Pet Shop</strong></p>
+  <p>Opposite Canara Bank, K.R.S Complex, Ground Floor, TM Road, Honnali - 577217</p>
+  <p>Mobile: <a style="color: #fff;" href="tel:+917483467378">+91 74834 67378</a></p>
+  <p>&copy; 2025 City Pet Care & Clinic. All rights reserved.</p>
+</footer>
   
 
   <script>
@@ -441,8 +484,9 @@
   const sections = document.querySelectorAll('.products, .about, .contact');
   sections.forEach(section => section.style.display = 'none');
   const target = document.getElementById(categoryId);
-  if (target) target.style.display = categoryId === 'about' || categoryId === 'contact' ? 'block' : 'grid';
-  }
+  if (target) target.style.display = categoryId === 'about' || categoryId === 'contact' ? 'block' : (categoryId === 'home' ? 'block' : 'grid');
+}
+
         
     function filterProducts() {
   const query = document.getElementById('searchInput').value.toLowerCase();
