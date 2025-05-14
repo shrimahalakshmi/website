@@ -110,14 +110,14 @@
     <h2>City Pet Care & Clinic</h2>
     <p><i>(Professional Care for Pets)</i></p>
   </header>
-
-  <nav>
-    <button onclick="showCategory('pet-food')">Pet Food</button>
-    <button onclick="showCategory('accessories')">Accessories</button>
-    <button onclick="showCategory('medicine')">Medicine</button>
-    <button onclick="showCategory('animal-feed')">Animals Feed</button>
-    <button onclick="showCategory('about')">Contact</button>
-  </nav>
+   <nav>
+  <button onclick="showCategory('home')">Home</button>
+  <button onclick="showCategory('pet-food')">Pet Food</button>
+  <button onclick="showCategory('accessories')">Accessories</button>
+  <button onclick="showCategory('medicine')">Medicine</button>
+  <button onclick="showCategory('animal-feed')">Animals Feed</button>
+  <button onclick="showCategory('about')">Contact</button>
+   </nav>
 
   <div class="search-box">
     <input type="text" id="searchInput" onkeyup="filterProducts()" placeholder="Search for products...">
@@ -427,24 +427,32 @@
     </div>
   </div>
 
+  <footer style="background-color: #007b5e; color: white; text-align: center; padding: 20px;">
+  <p>&copy; 2025 Shri Mahalakshmi Medicals and Pet Shop | City Pet Care & Clinic</p>
+  <p>Opposite Canara Bank K.R.S Complex Ground Floor, TM Road, Honnali - 577217</p>
+  <p>Contact: <a href="tel:+917483467378" style="color: white;">+91 74834 67378</a></p>
+  </footer>
   
 
   <script>
-    function showCategory(categoryId) {
-      const sections = document.querySelectorAll('.products, .about, .contact');
-      sections.forEach(section => section.style.display = 'none');
-      const target = document.getElementById(categoryId);
-      if (target) target.style.display = categoryId === 'about' || categoryId === 'contact' ? 'block' : 'grid';
-    }
-
+    
+    
+  function showCategory(categoryId) {
+  const sections = document.querySelectorAll('.products, .about, .contact');
+  sections.forEach(section => section.style.display = 'none');
+  const target = document.getElementById(categoryId);
+  if (target) target.style.display = categoryId === 'about' || categoryId === 'contact' ? 'block' : 'grid';
+  }
+        
     function filterProducts() {
-      const query = document.getElementById('searchInput').value.toLowerCase();
-      const cards = document.querySelectorAll('.product-card');
-      cards.forEach(card => {
-        const text = card.innerText.toLowerCase();
-        card.style.display = text.includes(query) ? 'block' : 'none';
-      });
-    }
+  const query = document.getElementById('searchInput').value.toLowerCase();
+  const cards = document.querySelectorAll('.product-card');
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    card.style.display = text.includes(query) ? 'block' : 'none';
+  });
+}
+
   </script>
 </body>
 </html>
