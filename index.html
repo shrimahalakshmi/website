@@ -56,7 +56,7 @@
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-template-columns: repeat(2, 1fr);
       gap: 15px;
     }
     .product-card {
@@ -101,6 +101,18 @@
         width: 95%;
       }
     }
+
+    @media (min-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+  }
+}
   </style>
 </head>
 <body>
