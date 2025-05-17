@@ -69,7 +69,7 @@
     .product-card img {
       max-width: 100%;
       height: 150px;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 8px;
     }
     .product-card h3 {
@@ -80,7 +80,7 @@
       color: #555;
     }
     .info-section {
-      background: white;
+      background: skyblue;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -91,6 +91,16 @@
       height: 300px;
       border: none;
       border-radius: 10px;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 0;
+      background-color:#007b5e; 
+      color:white; 
+      padding:20px; 
+      text-align:center;
+      text-size:12px;
     }
     @media (max-width: 600px) {
       nav button {
@@ -172,6 +182,7 @@
   <!-- Final note -->
   <div class="info-section" style="grid-column: 1 / -1;">
     <h3>Veterinary Medicines Available</h3>
+    <p>ನಮಲ್ಲಿ ಹಸು,ಕುರಿ,ನಾಯಿ ಮತ್ತು ಎಲ್ಲಾ ಪ್ರಾಣಿಗಳಿಗೆ ಸಂಬಂಧಪಟ್ಟ ಎಲ್ಲಾ ತರಹದ ಇಂಜೆಕ್ಷನ್, ಬೊಲಸ್(ಮಾತ್ರೆಗಳು), ಕ್ಯಾಲ್ಸಿಯಂ ಟೋನಿಕ್, ಲಿವರ್ ಟೋನಿಕ್ ಮತ್ತು ಇತ್ಯಾದಿ ಸಿಗುತ್ತದೆ.</p>
     <p>We have all variety of trusted veterinary medicines for all Animals & pets.</p>
   </div>
 
@@ -480,8 +491,6 @@
   <div id="animal-feed" class="products">
     <div class="product-card">
       <img src="images/cow-feed.png" alt="Cow Feed">
-      <h3>Cow Feed</h3>
-      <p>High-quality feed for healthy livestock.</p>
     </div>
 
     <div class="product-card">
@@ -574,7 +583,7 @@
   </div>
 
   
-<footer style="background-color:#007b5e; color:white; padding:20px; text-align:center;">
+<footer>
   <p><strong>Shri Mahalakshmi Medicals and Pet Shop</strong></p>
   <p>Opposite Canara Bank, K.R.S Complex, Ground Floor, TM Road, Honnali - 577217</p>
   <p>Mobile: <a style="color: #fff;" href="tel:+917483467378">+91 74834 67378</a></p>
