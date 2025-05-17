@@ -605,14 +605,6 @@
 
   <script>
     
-    
-  function showCategory(categoryId) {
-  const sections = document.querySelectorAll('.products, .about, .contact');
-  sections.forEach(section => section.style.display = 'none');
-  const target = document.getElementById(categoryId);
-  if (target) target.style.display = categoryId === 'about' || categoryId === 'contact' ? 'block' : (categoryId === 'home' ? 'block' : 'grid');
-}
-
         
     function filterProducts() {
   const query = document.getElementById('searchInput').value.toLowerCase();
@@ -622,14 +614,10 @@
     card.style.display = text.includes(query) ? 'block' : 'none';
   });
 }
-
-    <script>
   function showCategory(id) {
     document.querySelectorAll('.products, .about, .contact').forEach(e => e.style.display = 'none');
     document.getElementById(id).style.display = 'grid';
   }
-</script>
-    
 
   </script>
 </body>
