@@ -70,8 +70,21 @@
       max-width: 100%;
       height: 150px;
       object-fit: contain;
-      border-radius: 8px;
+      border-radius: 10px;
     }
+
+    .poster {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .poster img {
+     max-width:100%;
+     object-fit:contain;      
+    }
+    
     .product-card h3 {
       margin: 10px 0 5px;
     }
@@ -96,11 +109,13 @@
     footer {
       position: absolute;
       bottom: 0;
+      left: 0;
+      right:0;
       background-color:#007b5e; 
       color:white; 
       padding:20px; 
       text-align:center;
-      text-size:12px;
+      text-size:10px;
     }
     @media (max-width: 600px) {
       nav button {
@@ -194,6 +209,11 @@
   </div>
 
   <div id="pet-food" class="products">
+
+      <div class="info-section" style="grid-column: 1 / -1;">
+    <h2>Pet Foods</h2>
+      </div>
+    
     <div class="product-card">
       <img src="images/dog-food.jpg" alt="Dog Food">
       <h3>Royal Canin</h3>
@@ -287,6 +307,10 @@
   </div>
 
   <div id="accessories" class="products">
+
+    <div class="info-section" style="grid-column: 1 / -1;">
+    <h2>Accessories</h2>
+    </div>
 
     <div class="product-card">
       <img src="images/collar.jpg" alt="Collar">
@@ -466,11 +490,7 @@
     </div>
 
     <div class="product-card">
-      <img style="
-      
-      object-fit: contain;
-      
-      ;" src="images/toy2.webp" alt="toy">
+      <img src="images/toy2.webp" alt="toy">
       <h3>Pet Toy</h3>
       <p></p>
     </div>
@@ -489,7 +509,12 @@
   </div>
 
   <div id="animal-feed" class="products">
-    <div class="product-card">
+
+   <div class="info-section" style="grid-column: 1 / -1;">
+    <h2>ಪಶು ಆಹಾರ - Animal Feeds</h2>
+      </div>
+    
+    <div class="poster">
       <img src="images/cow-feed.png" alt="Cow Feed">
     </div>
 
@@ -543,6 +568,11 @@
   </div>
 
   <div id="medicine" class="products">
+
+   <div class="info-section" style="grid-column: 1 / -1;">
+    <h2>Medicine's</h2>
+   </div>
+    
     <div class="product-card">
       <img src="images/calcium.jpg" alt="Vet Medicine">
       <h3>Pet Medicine</h3>
