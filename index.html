@@ -57,7 +57,7 @@
     .products {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 20px;
+      gap: 15px;
     }
     .product-card {
       background-color: white;
@@ -106,9 +106,7 @@
 <body>
   <header>
     <h1>Shri Mahalakshmi Medicals and Pet Shop</h1>
-    <p>Opposite Canara Bank K.R.S Complex Ground floor, TM Road, Honnali - 577217</p>
-    <h2>City Pet Care & Clinic</h2>
-    <p><i>(Professional Care for Pets)</i></p>
+    
   </header>
    <nav>
   <button onclick="showCategory('home')">Home</button>
@@ -123,19 +121,17 @@
 <div id="home" class="products">
   <div class="info-section" style="grid-column: 1 / -1;">
     <h2>Welcome to City Pet Care & Clinic</h2>
-    <p>We offer a wide range of pet services for dogs and cats:</p>
-    <ul>
-      <li>Professional Pet Grooming</li>
-      <li>Bathing & Hair Trimming</li>
-      <li>Routine Health Checkups</li>
-      <li>Deworming & Vaccination</li>
-      <li>Pregnancy Diagnosis & Breeding Advice</li>
-      <li>Blood Transfusion</li>
-      <li>Pet Boarding</li>
-    </ul>
+    <p><i>(Professional Care for Pets)</i></p>
   </div>
 
   <!-- Images -->
+  <div class="product-card">
+    <img style="
+      object-fit: contain;
+      ;" src="images/vac.jpg" alt="Vaccination">
+    <h3>Vaccination</h3>
+    <p>Activating the immune system to protect againest infection disease.</p>
+  </div>
   <div class="product-card">
     <img src="images/grooming.jpg" alt="Pet Grooming">
     <h3>Grooming Services</h3>
@@ -151,12 +147,22 @@
     <h3>Bathing Care</h3>
     <p>We provide warm water bathing for all pet sizes.</p>
   </div>
+  <div class="product-card">
+    <img style="
+      
+    object-fit: contain;
+    
+    ;" src="images/cow.png" alt="Cow">
+    <h3>Consulting Doctor</h3>
+    <p>About animals Health imprroment, Breeding, Feeding and productivity.</p>
+  </div>
 
   <!-- Final note -->
   <div class="info-section" style="grid-column: 1 / -1;">
     <h3>Veterinary Medicines Available</h3>
-    <p>We stock a variety of trusted veterinary medicines for all Animals & pets.</p>
+    <p>We have all variety of trusted veterinary medicines for all Animals & pets.</p>
   </div>
+
 </div>
   
 
@@ -240,7 +246,7 @@
     <div class="product-card">
       <img src="images/calcium-bone.jpg" alt="Dog Food">
       <h3>drools - Calcium Milk Bone </h3>
-      <p></p>
+      <p>Bone development</p>
     </div>
 
     <div class="product-card">
@@ -249,13 +255,32 @@
       <p>Bone development</p>
     </div>
 
+    <div class="product-card">
+      <img src="images/treats.jpg" alt="Treats">
+      <h3>Me-O Treats</h3>
+      <p>Treat your cat</p>
+    </div>
+
   </div>
 
   <div id="accessories" class="products">
+
+    <div class="product-card">
+      <img src="images/collar.jpg" alt="Collar">
+      <h3>Dog Collar</h3>
+      <p> Stylish collar for your dog.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/chain.jpeg" alt="Chain">
+      <h3>Chain</h3>
+      <p>Different size Avalable.</p>
+    </div>
+
     <div class="product-card">
       <img src="images/belt.jpg" alt="Collar">
       <h3>Collar</h3>
-      <p>Stylish collar for your Cat & dog.</p>
+      <p>Stylish collar for your Cat & puppy.</p>
     </div>
 
     <div class="product-card">
@@ -268,6 +293,24 @@
       <img src="images/body-belt.webp" alt="bodybelt">
       <h3>Body Belt</h3>
       <p>Stylish Belt Avalable for your Cat & dog.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/chock-belt.png" alt="bodybelt">
+      <h3>Chock Belt</h3>
+      <p>Force limiting restraint belt.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/roap-lead.png" alt="roaplead">
+      <h3>Roap lead</h3>
+      <p>Stylish lead for your Cat & dog.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/leash1.jpg" alt="leash">
+      <h3>Leash</h3>
+      <p></p>
     </div>
 
     <div class="product-card">
@@ -424,9 +467,57 @@
 
   <div id="animal-feed" class="products">
     <div class="product-card">
-      <img src="images/cow-feed.jpg" alt="Cow Feed">
+      <img src="images/cow-feed.png" alt="Cow Feed">
       <h3>Cow Feed</h3>
       <p>High-quality feed for healthy livestock.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed0.jpg" alt="Cow Feed">
+      <h3>Calf Starter Premium</h3>
+      <p>ನವಜಾತ ಕರುಗಳಿಗೆ 4 ದಿನಗಳಿಂದ 3 ತಿಂಗಳವರೆಗೆ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed1.jpg" alt="Cow Feed">
+      <h3>Calf Grower</h3>
+      <p>ನವಜಾತ ಕರುಗಳಿಗೆ 4 ತಿಂಗಳಿಂದ 8 ತಿಂಗಳವರೆಗೆ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed2.jpg" alt="Cow Feed">
+      <h3>Dairy Protein Supplement</h3>
+      <p>ನವಜಾತ ಕರುಗಳಿಗೆ 9ನೇ ತಿಂಗಳಿನಿಂದ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed3.jpg" alt="Cow Feed">
+      <h3>MILKGEN 5000+</h3>
+      <p>10 ಲೀಟರ್ ಒಳಗೆ ಹಾಲು ಕೊಡುವುದಕ್ಕೆ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed4.jpg" alt="Cow Feed">
+      <h3>MILKGEN 8000</h3>
+      <p>10 ರಿಂದ 15 ಲೀಟರ್ ಒಳಗೆ ಹಾಲು ಕೊಡುವುದಕ್ಕೆ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed5.jpg" alt="Cow Feed">
+      <h3>MILKGEN 10000</h3>
+      <p>20 ಲೀಟರ್ ಮೇಲೆ ಹಾಲು ಕೊಡುವುದಕ್ಕೆ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed6.jpg" alt="Cow Feed">
+      <h3>Heifer Dry Cow </h3>
+      <p>ಕರು ಹಾಕುವ ಮೊದಲು 8 ತಿಂಗಳಿಂದ 1 ತಿಂಗಳವರೆಗೆ.</p>
+    </div>
+
+    <div class="product-card">
+      <img src="images/cow-feed7.png" alt="Cow Feed">
+      <h3>Transition MIX</h3>
+      <p>ಗರ್ಭಿಣಿ ಪ್ರಾಣಿಗಳಿಗೆ ಹೆರಿಗೆಯ ಮೊದಲು 21 ದಿನಗಳು ಮತ್ತು ನಂತರ 30 ದಿನಗಳು.</p>
     </div>
   </div>
 
@@ -447,14 +538,16 @@
   <div id="about" class="about">
     <div class="info-section">
       <h2>About Our Services</h2>
-      <ul>
-        <li>Routine Health Checkup (Dog & Cat)</li>
-        <li>Puppy Care (Deworming & Vaccination)</li>
-        <li>Pregnancy Diagnosis & Breeding Advice</li>
-        <li>Blood Transfusion</li>
-        <li>Pet Grooming & Pet Boarding</li>
-      </ul>
-    </div>
+      <p>We offer a wide range of pet services for dogs and cats:</p>
+    <ul>
+      <li>Professional Pet Grooming</li>
+      <li>Bathing & Hair Trimming</li>
+      <li>Routine Health Checkups</li>
+      <li>Deworming & Vaccination</li>
+      <li>Pregnancy Diagnosis & Breeding Advice</li>
+      <li>Blood Transfusion</li>
+      <li>Pet Boarding</li>
+    </ul>
 
     <div class="info-section">
       <h2>Book an Appointment | Contact Us</h2>
@@ -468,7 +561,7 @@
     </div>
   </div>
 
-  <!-- Add this at the end before </body> -->
+  
 <footer style="background-color:#007b5e; color:white; padding:20px; text-align:center;">
   <p><strong>Shri Mahalakshmi Medicals and Pet Shop</strong></p>
   <p>Opposite Canara Bank, K.R.S Complex, Ground Floor, TM Road, Honnali - 577217</p>
