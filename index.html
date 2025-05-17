@@ -72,19 +72,6 @@
       object-fit: contain;
       border-radius: 10px;
     }
-
-    .poster {
-      width:150px;
-      background-color: white;
-      padding: 15px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .poster img {
-     max-width:100%;
-     object-fit:contain;      
-    }
     
     .product-card h3 {
       margin: 10px 0 5px;
@@ -107,15 +94,6 @@
       border-radius: 10px;
     }
 
-    footer {
-      position: absolute;
-      bottom: 0;
-      background-color:#007b5e; 
-      color:white; 
-      padding:20px; 
-      text-align:center;
-      text-size:8px;
-    }
     @media (max-width: 600px) {
       nav button {
         padding: 10px;
@@ -512,10 +490,8 @@
    <div class="info-section" style="grid-column: 1 / -1;">
     <h2>ಪಶು ಆಹಾರ - Animal Feeds</h2>
       </div>
+
     
-    <div class="poster">
-      <img src="images/cow-feed.png" alt="Cow Feed">
-    </div>
 
     <div class="product-card">
       <img src="images/cow-feed0.jpg" alt="Cow Feed">
@@ -611,11 +587,23 @@
     </div>
 
         
-<footer>
+<footer style="
+      position: reletive;
+      bckground-color:#007b5e; 
+      color:white; 
+      padding:20px; 
+      text-align:center;
+      text-size:8px;
+  "><div style="
+      height:70px;
+      position: absolute;
+      bottom: 0;
+      "> 
   <p><strong>Shri Mahalakshmi Medicals and Pet Shop</strong></p>
   <p>Opposite Canara Bank, K.R.S Complex, Ground Floor, TM Road, Honnali - 577217</p>
   <p>Mobile: <a style="color: #fff;" href="tel:+917483467378">+91 74834 67378</a></p>
   <p>&copy; 2025 City Pet Care & Clinic. All rights reserved.</p>
+  </div>
 </footer>
   </div>
 
